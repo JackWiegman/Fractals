@@ -20,7 +20,7 @@ public class H {
 				centerX - legSize / 2, centerY);
 		StdDraw.line(centerX + legSize / 2, centerY + legSize / 2,
 				centerX + legSize / 2, centerY - legSize / 2);
-		StdDraw.len(centerX - legSize / 2, centerY + legSize / 2,
+		StdDraw.line(centerX - legSize / 2, centerY + legSize / 2,
 				centerX - legSize / 2, centerY - legSize / 2);
 	}
 
