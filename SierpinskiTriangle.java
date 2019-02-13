@@ -5,7 +5,7 @@ public class SierpinskiTriangle {
 
 	private static Point2D.Double min, max;
 	private static Color background = StdDraw.GRAY;
-	public static final int SIZE = 1024;
+	public static final int SIZE = 800;
 	public static Triangle triangle;
 
 	public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class SierpinskiTriangle {
 	public static void setup() {
 		min = new Point2D.Double(0, 0);
 		max = new Point2D.Double(SIZE, SIZE);
-		StdDraw.setCanvasSize(1500, 800);
+		StdDraw.setCanvasSize(SIZE, SIZE);
 
 		StdDraw.setXscale(min.x, max.x);
 		StdDraw.setYscale(min.y, max.y);
@@ -26,7 +26,7 @@ public class SierpinskiTriangle {
 	}
 
 	public static void loop() {
-		int n = 10;
+		int n = 6;
 		StdDraw.clear(background);
 
 		Triangle backgroundTriangle = new Triangle();
